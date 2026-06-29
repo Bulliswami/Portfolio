@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Swami Reddy — Full Stack Developer</title>
+<title>Swami Reddy — Full Stack &amp; Retail Technology Engineer</title>
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
   :root {
@@ -122,19 +122,14 @@
     width: 300px; height: 300px; position: relative;
   }
   .avatar-ring-outer {
-    position: absolute; inset: -6px; border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    position: absolute; inset: -6px; border-radius: 28px;
     background: linear-gradient(135deg, var(--orange), var(--yellow), var(--pink), var(--blue));
-    animation: morph 8s ease-in-out infinite, spin 12s linear infinite;
+    animation: spin 12s linear infinite;
   }
-  @keyframes morph {
-    0%,100%{ border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; }
-    25%{ border-radius: 58% 42% 75% 25% / 76% 46% 54% 24%; }
-    50%{ border-radius: 50% 50% 33% 67% / 55% 27% 73% 45%; }
-    75%{ border-radius: 33% 67% 58% 42% / 63% 68% 32% 37%; }
-  }
+
   @keyframes spin { to { filter: hue-rotate(360deg); } }
   .avatar-inner {
-    position: absolute; inset: 4px; border-radius: inherit;
+    position: absolute; inset: 4px; border-radius: 20px;
     background: var(--bg2); display: flex; align-items: center; justify-content: center;
     overflow: hidden;
   }
@@ -152,7 +147,7 @@
   }
   .ft-1 { top: -10px; left: -20px; color: var(--green); border-color: rgba(6,214,160,0.3); animation-delay: 0s; }
   .ft-2 { bottom: 20px; right: -30px; color: var(--blue); border-color: rgba(67,97,238,0.3); animation-delay: 1s; }
-  .ft-3 { top: 50%; right: -40px; color: var(--pink); border-color: rgba(247,37,133,0.3); transform: translateY(-50%); animation-delay: 2s; }
+  .ft-3 { top: 25%; right: -40px; color: var(--pink); border-color: rgba(247,37,133,0.3); transform: translateY(-50%); animation-delay: 2s; }
   @keyframes floatTag { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-8px)} }
   .ft-3 { animation: floatTag3 3s ease-in-out infinite 2s; }
   @keyframes floatTag3 { 0%,100%{transform:translateY(-50%)} 50%{transform:translateY(calc(-50% - 8px))} }
@@ -401,11 +396,11 @@
         <div class="word1">Swami</div>
         <div class="word2">Reddy</div>
       </h1>
-      <p class="hero-role"><span>Full Stack Developer</span> · 5+ Years of Experience</p>
+      <p class="hero-role"><span>Full Stack Developer</span> · Enterprise &amp; Geospatial Applications · 5+ Years</p>
       <p class="hero-bio">
-        I build scalable, high-performance web applications for financial and data-intensive domains.
-        From geospatial climate data visualizations to real-time trading platforms — I deliver
-        full-stack solutions that handle complex data at scale with precision and speed.
+        I build scalable, high-performance enterprise applications — from store operations platforms
+        and geospatial analytics to supply chain and field operations dashboards.
+        I deliver full-stack solutions that process large datasets at scale with precision and speed.
       </p>
       <div class="hero-cta">
         <a href="#projects" class="btn btn-orange">
@@ -421,7 +416,6 @@
         <div class="stat-item"><div class="stat-num">5+</div><div class="stat-label">Years Coding</div></div>
         <div class="stat-item"><div class="stat-num">30+</div><div class="stat-label">Apps Shipped</div></div>
         <div class="stat-item"><div class="stat-num">10+</div><div class="stat-label">Open Source</div></div>
-        <div class="stat-item"><div class="stat-num">Finance</div><div class="stat-label">Domain Focus</div></div>
       </div>
     </div>
 
@@ -429,18 +423,18 @@
       <div class="avatar-wrap">
         <div class="avatar-ring-outer"></div>
         <div class="avatar-inner">
-          <img src="photo.jpg" alt="Swami Reddy" style="width:100%;height:100%;object-fit:cover;object-position:48% 18%;transform:scale(1.5);transform-origin:48% 18%;" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+          <img src="mine2.png" alt="Swami Reddy" style="width:100%;height:100%;object-fit:cover;object-position:10% 1%;transform:scale(1.6);transform-origin:50% 18%;" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
           <div class="avatar-placeholder-fs" style="display:none">
             <svg viewBox="0 0 24 24" fill="none" stroke="#ff6b35" stroke-width="1">
               <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>
             </svg>
-            <span><img src="./mine.png" alt=""></span>
+            <span>Add Your Photo</span>
           </div>
         </div>
       </div>
-      <div class="floating-tag ft-1">⚛️ React / TypeScript</div>
-      <div class="floating-tag ft-2">☁️ GCP / AWS</div>
-      <div class="floating-tag ft-3">🗺️ Geospatial Data</div>
+      <div class="floating-tag ft-1">🏗️ Enterprise Apps</div>
+      <div class="floating-tag ft-2">☁️ GCP / BigQuery</div>
+      <div class="floating-tag ft-3">🗺️ Geospatial &amp; Spatial Data</div>
     </div>
   </div>
 </section>
@@ -454,13 +448,14 @@
     <div class="about-text">
       <p>
         I'm a Full Stack Developer with 5+ years of experience building data-intensive,
-        business-critical web applications. I specialize in financial services — from
-        climate risk data platforms to high-throughput electronic trading systems.
+        business-critical enterprise applications across retail, transit, and operations domains.
+        I specialize in geospatial analytics, store and field operations platforms, and large-scale
+        data pipelines on GCP and cloud-native infrastructure.
       </p>
       <p>
         I thrive at the intersection of complex data engineering and intuitive UI design,
         delivering performant applications that handle large geospatial datasets, real-time
-        WebSocket streams, and legacy-to-modern migrations with precision.
+        operational dashboards, BigQuery-powered analytics, and Kubernetes-based microservices.
       </p>
       <p>
         I actively leverage AI/LLM coding tools (Claude Code, Cursor) to accelerate
@@ -498,7 +493,7 @@
       <div class="tag-cloud">
         <span class="atag atag-p">PostgreSQL</span><span class="atag atag-p">PostGIS</span>
         <span class="atag atag-p">BigQuery</span><span class="atag atag-p">MongoDB</span>
-        <span class="atag atag-p">Redis</span><span class="atag atag-p">MySQL</span>
+        <span class="atag atag-p">Redis</span><span class="atag atag-p">MySQL</span><span class="atag atag-p">Oracle DB</span>
       </div>
     </div>
   </div>
@@ -555,7 +550,7 @@
         <span class="sk-pill">GCP / BigQuery</span>
         <span class="sk-pill">AWS (EC2, S3, Lambda)</span>
         <span class="sk-pill">Docker</span><span class="sk-pill">Kubernetes</span>
-        <span class="sk-pill">Jenkins CI/CD</span>
+        <span class="sk-pill">Jenkins CI/CD</span><span class="sk-pill">GCP</span>
         <span class="sk-pill">GitHub Actions</span><span class="sk-pill">Terraform</span>
       </div>
     </div>
@@ -566,7 +561,7 @@
         <span class="sk-pill">PostgreSQL</span><span class="sk-pill">PostGIS</span>
         <span class="sk-pill">Google BigQuery (analytical SQL)</span><span class="sk-pill">MySQL</span>
         <span class="sk-pill">SQL Server</span><span class="sk-pill">MongoDB</span><span class="sk-pill">Redis</span>
-        <span class="sk-pill">Spatial SQL / GeoJSON</span>
+        <span class="sk-pill">Spatial SQL / GeoJSON</span><span class="sk-pill">Oracle DB</span><span class="sk-pill">SQL Optimization</span>
         <span class="sk-pill">Spatial Indexes</span><span class="sk-pill">Geometric Operations</span>
       </div>
     </div>
@@ -593,12 +588,12 @@
   <div class="section-divider" style="background:linear-gradient(90deg,var(--orange),var(--yellow))"></div>
   <div class="projects-grid" style="grid-template-columns:repeat(auto-fill,minmax(320px,1fr))">
     <div class="proj-card">
-      <div class="proj-header" style="background:linear-gradient(135deg,#1a0500,#401200)"><div class="proj-icon">📈</div></div>
+      <div class="proj-header" style="background:linear-gradient(135deg,#001a0d,#003d1f)"><div class="proj-icon">🔍</div></div>
       <div class="proj-body">
-        <div class="proj-type-tags"><span class="proj-type-tag ptt-o">Trading Platform</span><span class="proj-type-tag ptt-b">Java/Spring</span><span class="proj-type-tag ptt-g">AgGrid</span></div>
-        <div class="proj-name">NovaTrader</div>
-        <p class="proj-desc">Real-time trading platform built with React, TypeScript, and AgGrid powered by a Java/Spring Boot backend. Features live order books with WebSocket/STOMP market data feeds, enterprise data grids with sub-100ms update cycles, and full authentication and audit logging.</p>
-        <a href="https://github.com/swamireddy742-a11y/NovaTrader" target="_blank" rel="noopener" class="proj-gh-btn">
+        <div class="proj-type-tags"><span class="proj-type-tag ptt-g">Elasticsearch</span><span class="proj-type-tag ptt-b">Spring Boot</span><span class="proj-type-tag ptt-o">GCP</span></div>
+        <div class="proj-name">RetailSearchService</div>
+        <p class="proj-desc">Elasticsearch-powered product search microservice built with Java and Spring Boot. Provides full-text search, faceted filtering, and relevance tuning for large retail product catalogs. Containerized with Docker and deployed on GCP with Kubernetes orchestration and CI/CD via GitHub Actions.</p>
+        <a href="https://github.com/swamireddy742-a11y/RetailSearchService" target="_blank" rel="noopener" class="proj-gh-btn">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.021c0 4.428 2.865 8.185 6.839 9.51.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.004.07 1.532 1.032 1.532 1.032.892 1.53 2.341 1.088 2.912.832.091-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.026 2.747-1.026.546 1.378.202 2.397.1 2.65.64.7 1.028 1.595 1.028 2.688 0 3.848-2.338 4.695-4.566 4.944.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.579.688.481C19.138 20.203 22 16.447 22 12.021 22 6.484 17.523 2 12 2z"/></svg>
           View on GitHub
         </a>
@@ -606,12 +601,12 @@
       </div>
     </div>
     <div class="proj-card">
-      <div class="proj-header" style="background:linear-gradient(135deg,#00091a,#002040)"><div class="proj-icon">🗺️</div></div>
+      <div class="proj-header" style="background:linear-gradient(135deg,#00091a,#001f40)"><div class="proj-icon">📊</div></div>
       <div class="proj-body">
-        <div class="proj-type-tags"><span class="proj-type-tag ptt-b">Geospatial</span><span class="proj-type-tag ptt-g">PostGIS</span><span class="proj-type-tag ptt-o">Mapbox GL JS</span></div>
-        <div class="proj-name">GeoMatrix</div>
-        <p class="proj-desc">Geospatial data visualization platform using Mapbox GL JS vector tiles and PostGIS spatial queries for rendering millions of asset-level data points. Implements web workers, IndexedDB caching, and data decimation for smooth client-side performance.</p>
-        <a href="https://github.com/swamireddy742-a11y/GeoMatrix" target="_blank" rel="noopener" class="proj-gh-btn">
+        <div class="proj-type-tags"><span class="proj-type-tag ptt-b">Spring Boot</span><span class="proj-type-tag ptt-g">BigQuery</span><span class="proj-type-tag ptt-o">GCP</span></div>
+        <div class="proj-name">StoreOpsMonitor</div>
+        <p class="proj-desc">Store operations analytics dashboard integrating Spring Boot with Google Cloud BigQuery for querying large operational datasets. Exposes REST APIs for real-time KPI tracking across store locations. Deployed on GCP with Docker containerization and Kubernetes orchestration.</p>
+        <a href="https://github.com/swamireddy742-a11y/StoreopsMonitor" target="_blank" rel="noopener" class="proj-gh-btn">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.021c0 4.428 2.865 8.185 6.839 9.51.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.004.07 1.532 1.032 1.532 1.032.892 1.53 2.341 1.088 2.912.832.091-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.026 2.747-1.026.546 1.378.202 2.397.1 2.65.64.7 1.028 1.595 1.028 2.688 0 3.848-2.338 4.695-4.566 4.944.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.579.688.481C19.138 20.203 22 16.447 22 12.021 22 6.484 17.523 2 12 2z"/></svg>
           View on GitHub
         </a>
@@ -619,12 +614,12 @@
       </div>
     </div>
     <div class="proj-card">
-      <div class="proj-header" style="background:linear-gradient(135deg,#001a0d,#00401f)"><div class="proj-icon">🌍</div></div>
+      <div class="proj-header" style="background:linear-gradient(135deg,#1a0a00,#3d2000)"><div class="proj-icon">🚀</div></div>
       <div class="proj-body">
-        <div class="proj-type-tags"><span class="proj-type-tag ptt-g">Climate Data</span><span class="proj-type-tag ptt-b">BigQuery</span><span class="proj-type-tag ptt-o">NestJS</span></div>
-        <div class="proj-name">TerraInsight</div>
-        <p class="proj-desc">Climate and environmental data analytics dashboard querying Google BigQuery warehouses. NestJS API layer transforms large analytical datasets into optimized React visualizations with virtualized tabular rendering and real-time filter controls.</p>
-        <a href="https://github.com/swamireddy742-a11y/TerraInsight" target="_blank" rel="noopener" class="proj-gh-btn">
+        <div class="proj-type-tags"><span class="proj-type-tag ptt-o">React</span><span class="proj-type-tag ptt-b">Spring Boot</span><span class="proj-type-tag ptt-g">Kubernetes</span></div>
+        <div class="proj-name">RetailOps Dashboard</div>
+        <p class="proj-desc">Full-stack retail operations dashboard built with React frontend and Spring Boot microservices backend, backed by MongoDB. Containerized with Docker and orchestrated on Kubernetes with namespace isolation, horizontal scaling, and service discovery. Includes full CI/CD pipeline.</p>
+        <a href="https://github.com/swamireddy742-a11y/SprintBootReact" target="_blank" rel="noopener" class="proj-gh-btn">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.021c0 4.428 2.865 8.185 6.839 9.51.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.004.07 1.532 1.032 1.532 1.032.892 1.53 2.341 1.088 2.912.832.091-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.026 2.747-1.026.546 1.378.202 2.397.1 2.65.64.7 1.028 1.595 1.028 2.688 0 3.848-2.338 4.695-4.566 4.944.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.579.688.481C19.138 20.203 22 16.447 22 12.021 22 6.484 17.523 2 12 2z"/></svg>
           View on GitHub
         </a>
@@ -744,20 +739,6 @@
         <div class="tl-top"><div class="tl-role">Full Stack Developer</div><div class="tl-period">Mar 2025 – Present</div></div>
         <div class="tl-company">MARTA — Metropolitan Atlanta Rapid Transit Authority</div>
         <div class="tl-loc">📍 Atlanta, GA · Full-time</div>
-        <ul class="tl-pts">
-          <li>Designed and developed enterprise trading-style web applications using React, TypeScript, Java, and Spring Boot, delivering high-performance SPAs supporting real-time operational workflows.</li>
-          <li>Built reusable React component libraries utilizing Redux, Hooks, modular architecture, and enterprise UI patterns, improving maintainability and accelerating feature delivery across multiple applications.</li>
-          <li>Integrated frontend applications with Spring Boot, REST APIs, WebSockets, SockJS, and enterprise backend services enabling secure real-time communication and low-latency data updates.</li>
-          <li>Developed scalable backend services using Java, Spring Boot, multithreading, RESTful APIs, and SQL supporting high-throughput enterprise transaction processing.</li>
-          <li>Improved application response time by 47% through React rendering optimization, WebSocket message optimization, SQL tuning, browser profiling, and frontend performance improvements.</li>
-          <li>Developed enterprise data grids using AgGrid with advanced filtering, sorting, virtualization, and client-side rendering techniques for large transactional datasets.</li>
-          <li>Built automated unit and integration tests utilizing JUnit, Mockito, and Playwright while supporting continuous testing throughout the SDLC.</li>
-          <li>Utilized Git, Jenkins, Maven, and CI/CD pipelines to automate builds, deployments, code reviews, and production release processes.</li>
-          <li>Leveraged Claude AI, Cursor, and GitHub Copilot to accelerate feature development, code refactoring, documentation generation, and technical debt reduction.</li>
-          <li>Contributed to legacy application modernization by migrating existing modules into modern React applications while preserving business functionality and improving user experience.</li>
-          <li>Collaborated with architects, product managers, QA engineers, and backend developers in Agile Scrum.</li>
-          <li>Designed backend integration utilities using Python, FastAPI, and SQL to automate operational workflows.</li>
-        </ul>
         <div class="tl-badges">
           <span class="tl-badge">React</span><span class="tl-badge">TypeScript</span>
           <span class="tl-badge">Java / Spring Boot</span><span class="tl-badge">AgGrid</span>
@@ -773,17 +754,6 @@
         <div class="tl-top"><div class="tl-role">Full Stack Developer</div><div class="tl-period">May 2023 – Mar 2025</div></div>
         <div class="tl-company">HCA Healthcare</div>
         <div class="tl-loc">📍 Atlanta, GA · Full-time</div>
-        <ul class="tl-pts">
-          <li>Developed enterprise healthcare applications using Java, Spring Boot, React, and TypeScript, delivering scalable SPAs that handled complex clinical and operational data workflows.</li>
-          <li>Built reusable React component libraries utilizing Redux, Hooks, modular UI architecture, HTML5, and CSS3, accelerating feature delivery across multiple application teams.</li>
-          <li>Integrated frontend with Spring Boot REST APIs, WebSockets, SockJS, SQL Server, and backend microservices enabling secure real-time data updates and low-latency communication.</li>
-          <li>Improved application throughput by 43% through SQL optimization, WebSocket message tuning, async processing improvements, and React rendering performance enhancements.</li>
-          <li>Designed enterprise data-intensive interfaces utilizing AgGrid with advanced filtering, pagination, and virtualization for large clinical and operational datasets.</li>
-          <li>Developed automated unit and integration tests using JUnit, Mockito, Playwright, and REST API validation to ensure quality throughout the SDLC.</li>
-          <li>Leveraged Claude AI, Cursor, and GitHub Copilot to accelerate development, code reviews, refactoring, and documentation generation.</li>
-          <li>Refactored legacy enterprise modules into modern React SPAs while preserving business logic and improving user experience.</li>
-          <li>Developed backend automation services using Python, FastAPI, SQL, and cloud-native APIs to streamline operational workflows.</li>
-        </ul>
         <div class="tl-badges">
           <span class="tl-badge">React</span><span class="tl-badge">TypeScript</span>
           <span class="tl-badge">Java / Spring Boot</span><span class="tl-badge">AgGrid</span>
@@ -799,16 +769,6 @@
         <div class="tl-top"><div class="tl-role">Full Stack Developer</div><div class="tl-period">Aug 2020 – Jul 2022</div></div>
         <div class="tl-company">Dollar Tree Stores</div>
         <div class="tl-loc">📍 Chesapeake, VA · Full-time</div>
-        <ul class="tl-pts">
-          <li>Developed enterprise retail applications using Java, Spring Boot, React, and TypeScript supporting high-volume inventory and operational workflows.</li>
-          <li>Built scalable React SPAs utilizing Redux, Hooks, and reusable component architecture with HTML5 and CSS3 for fast, maintainable UIs.</li>
-          <li>Integrated browser applications with Spring Boot REST APIs, WebSockets, and SQL databases enabling reliable real-time data synchronization.</li>
-          <li>Reduced application response time by 39% through frontend rendering optimization, SQL query tuning, WebSocket message optimization, and caching strategies.</li>
-          <li>Developed enterprise grid-based UIs utilizing AgGrid with dynamic filtering, sorting, and virtualization for large product and operational datasets.</li>
-          <li>Implemented automated testing using JUnit, Mockito, and Playwright to ensure application reliability and support CI/CD pipelines.</li>
-          <li>Leveraged Claude AI, Cursor, and GitHub Copilot to accelerate feature development, refactoring, and technical debt reduction.</li>
-          <li>Modernized legacy web applications by migrating existing modules into React SPAs while preserving existing business functionality.</li>
-        </ul>
         <div class="tl-badges">
           <span class="tl-badge">React</span><span class="tl-badge">TypeScript</span>
           <span class="tl-badge">Java / Spring Boot</span><span class="tl-badge">AgGrid</span>
@@ -838,21 +798,7 @@
   </div>
 </section>
 
-<!-- ── Resume ── -->
-<section id="resume" class="reveal" style="background:var(--bg2)">
-  <div class="resume-box">
-    <div class="resume-emoji">📄</div>
-    <h2 class="resume-title">Download My <span>Resume</span></h2>
-    <p class="resume-sub">Full CV with project details, metrics, and references available on request.</p>
-    <div class="resume-btns">
-      <a href="./resume.pdf" download class="btn btn-orange">
-        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-        Download PDF
-      </a>
-      <a href="https://github.com/swamireddy742-a11y?tab=repositories" target="_blank" rel="noopener" class="btn btn-outline-o">GitHub Profile</a>
-    </div>
-  </div>
-</section>
+
 
 <!-- ── Contact ── -->
 <section id="contact" class="reveal">
